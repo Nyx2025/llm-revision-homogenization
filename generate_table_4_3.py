@@ -57,12 +57,12 @@ The input file should contain at least the following pairwise score columns:
 
 Default input path
 ------------------
-    /Users/renwei/Downloads/quantitative_results_bertscore_100_detailed.csv
+    /.../quantitative_results_bertscore_100_detailed.csv
 
 Default outputs
 ---------------
-    /Users/renwei/Downloads/table_4_3_pairwise_model_similarity.csv
-    /Users/renwei/Downloads/table_4_3_pairwise_model_similarity.xlsx
+    /.../table_4_3_pairwise_model_similarity.csv
+    /.../table_4_3_pairwise_model_similarity.xlsx
 """
 
 from __future__ import annotations
@@ -74,7 +74,7 @@ from typing import Iterable
 import pandas as pd
 
 
-DEFAULT_INPUT = Path("/Users/renwei/Downloads/quantitative_results_bertscore_100_detailed.csv")
+DEFAULT_INPUT = Path("/.../quantitative_results_bertscore_100_detailed.csv")
 
 PAIRWISE_COLUMNS = {
     "GPT-4o-mini vs DeepSeek-V3": {
