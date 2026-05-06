@@ -1,14 +1,14 @@
 # compute_bertscore_100_final.py
-# 目的：
+
 #   计算 100 条 learner-generated error units 的最终量化结果：
 #   1) BERTScore F1：semantic homogenization
 #   2) Jaccard Similarity：lexical homogenization
 #
-# 运行前安装依赖：
+
 #   pip install pandas numpy bert-score torch openpyxl
 #
 # 运行：
-#   python /Users/renwei/Downloads/compute_bertscore_100_final.py
+#   python /.../compute_bertscore_100_final.py
 
 import re
 from pathlib import Path
@@ -22,7 +22,7 @@ from bert_score import score
 # 1. File paths
 # =========================
 
-INPUT_CSV = Path("/Users/renwei/Downloads/revisions_output.csv")
+INPUT_CSV = Path("/.../revisions_output.csv")
 
 N_SAMPLES = 100
 
@@ -45,9 +45,7 @@ MODEL_COLUMNS = {
 
 # =========================
 # 3. BERTScore settings
-# =========================
-# roberta-large 是 BERTScore 英文任务中常用且较稳妥的设置。
-# pilot 已经跑通，所以正式 100 条继续使用同一设置。
+
 
 BERTSCORE_MODEL = "roberta-large"
 RESCALE_WITH_BASELINE = True
