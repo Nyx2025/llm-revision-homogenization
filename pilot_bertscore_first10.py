@@ -16,7 +16,7 @@ from bert_score import score
 
 
 # 你的 revision_output 文件绝对路径
-INPUT_CSV = Path("/Users/renwei/Downloads/revisions_output.csv")
+INPUT_CSV = Path("/.../revisions_output.csv")
 
 # 只跑前 10 条做 pilot
 N_PILOT = 10
