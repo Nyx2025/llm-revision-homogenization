@@ -83,7 +83,7 @@ from typing import Iterable
 import pandas as pd
 
 
-DEFAULT_INPUT = Path("/Users/renwei/Downloads/quantitative_results_bertscore_100_detailed.csv")
+DEFAULT_INPUT = Path("/.../quantitative_results_bertscore_100_detailed.csv")
 
 BERTSCORE_PAIR_COLUMNS = [
     "bertscore_gpt_deepseek",
